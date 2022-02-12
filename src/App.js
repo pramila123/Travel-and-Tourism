@@ -1,10 +1,19 @@
 
+
+import { GlobalStyle } from "./globalStyles";
+
+
+import AppRouter from "./components/routes/AppRouter";
 function App() {
   return (
-    <div className="App">
-      hello
+    <>
+      <GlobalStyle/>
+    
+   
+    <AppRouter/>
+    
           
-    </div>
+    </>
   );
 }
 
