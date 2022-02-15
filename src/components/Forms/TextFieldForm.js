@@ -1,16 +1,18 @@
 import { TextField } from '@mui/material';
 import React from 'react';
 
-const TextFieldForm = ({label,name, ...otherProps}) => {
+const TextFieldForm = ({name,label,...otherProps}) => {
+ 
     const TextFieldConfig={
     fullWidth:true,
         variant:"outlined",
         size:"small",
-       
-       ...otherProps
+        ...otherProps
+      
     }
   return <>
-  <TextField  {...TextFieldConfig} label={label} multiline />
+  <TextField  {...TextFieldConfig} label={label} multiline name={name} />
+   
   </>;
 };
 
